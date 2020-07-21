@@ -125,19 +125,19 @@ main {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("img/Left.png") !important;
+  background-image: url("/assets/img/Left.png") !important;
 }
 
 .carousel-control-next-icon {
-  background-image: url("img/Right.png") !important;
+  background-image: url("/assets/img/Right.png") !important;
 }
 
 .carousel-control-prev-icon2 {
-  background-image: url("img/LeftW.png") !important;
+  background-image: url("/assets/img/LeftW.png") !important;
 }
 
 .carousel-control-next-icon2 {
-  background-image: url("img/RightW.png") !important;
+  background-image: url("/assets/img/RightW.png") !important;
 }
 
 /*.carousel-control-prev {
@@ -167,7 +167,7 @@ main {
 
 .card{
   margin-top: 20px;
-  border: none;
+  border: none !important;
 }
 
 .NuestrosPacientesDicen{
@@ -277,7 +277,7 @@ main {
 .ui.image.comment__profile-img {
   height: var(--comments-profile-mini) !important;
   width: var(--comments-profile-mini) !important;
-  background-image: url('img/FotoComentario.png');
+  background-image: url('/assets/img/FotoComentario.png');
   background-size: cover;
   background-color: #e8e8e887;
 }
@@ -812,7 +812,7 @@ h1{
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url('img/Menu.png');
+  background-image: url('/assets/img/Menu.png');
 }
 
 .navbar-light .navbar-toggler {
@@ -825,7 +825,7 @@ h1{
     position: absolute;
     background:white none repeat scroll 0% 0%;
     color:rgb(255, 255, 255);
-    top: 88px;
+    top: 75px;
     right: 0px;
     z-index: 99;
     padding: 0px 20px 20px;
@@ -1042,7 +1042,7 @@ h1{
 }
 
 .altoMovil{
-  padding: 0;
+  padding: 0 !important;
   @media (max-width: @mdScreen){
     height: max-content;
   }
@@ -1190,5 +1190,37 @@ textarea.parsley-error {
   align-items: center;
   @media (max-width: @lgScreen){
     display: none;
+  }
+}
+
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      transition-property: opacity;
+    }
+
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
   }
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>BetterLife</title>
     <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="css/Font.css" />
@@ -13,14 +13,12 @@
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/less.min.js"></script>
-
     <script>
-        less: {
-            env: 'development'
+        less = {
+            env:'development'
         }
     </script>
-
+    <script src="js/less.min.js"></script>
 </head>
 <body>
     <style>
@@ -109,7 +107,7 @@
     ?>
 
     <header id="header" style="top: 0 !important; z-index: 500; position: fixed;filter: blur(0px);width: 100%;opacity: 0.9;">
-        <div style="height: 75px;background: #F9F9F9;width: 100%;filter: blur(1px);filter: blur(5px);"></div>
+        <div style="height: 75px;background: #F9F9F9;width: 100%;box-shadow: 0 0px 10px 1px black;"></div>
         <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light" style="height: 75px;position: absolute;">
             <div style="display: flex;align-items: center;">
                 <div>
@@ -167,7 +165,7 @@
                         <div class="d-flex align-items-center" style="margin-top: 50px">
                             <img src="img/img_betterlife.svg" class="carousel-logo-img">
                             <div class="d-flex flex-column pl-2">
-                                <h1 style="font-size: 22px"><?php echo($bIngles ? 'The Medical' : 'Plataforma integral')?><br><?php echo($bIngles ? 'Tourism Platform' : 'de Turismo Médico')?></h1>
+                                <h3 style="font-size: 22px"><?php echo($bIngles ? 'The Medical' : 'Plataforma integral')?><br><?php echo($bIngles ? 'Tourism Platform' : 'de Turismo Médico')?></h3>
                                 <p class="text-white"><?php echo($bIngles ? 'Health & Wellness' : 'Salud y Bienestar')?></p>
                             </div>
                         </div>
@@ -177,12 +175,12 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/img_1.jpg" class="d-md-block w-100" alt="carousel-landing-02">
+                    <img src="img/img_2.jpg" class="d-md-block w-100" alt="carousel-landing-02">
                     <div class="carousel-caption">
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center" style="margin-top: 50px">
                             <img src="img/img_betterlife.svg" class="carousel-logo-img">
                             <div class="d-flex flex-column pl-4">
-                                <h1><?php echo($bIngles ? 'Teleassistance' : 'Teleasistencia')?><br><?php echo($bIngles ? 'and Consultations' : 'y consultas')?></h1>
+                                <h3><?php echo($bIngles ? 'Teleassistance' : 'Teleasistencia')?><br><?php echo($bIngles ? 'and Consultations' : 'y consultas')?></h3>
                                 <p class="text-white"><?php echo($bIngles ? 'Attending to patients by video call' : 'Atiende a los pacientes por videollamada')?></p>
                             </div>
                         </div>
@@ -192,12 +190,12 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/img_1.jpg" class="d-md-block w-100" alt="carousel-landing-03">
+                    <img src="img/img_3.jpg" class="d-md-block w-100" alt="carousel-landing-03">
                     <div class="carousel-caption">
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center" style="margin-top: 50px">
                             <img src="img/img_betterlife.svg" class="carousel-logo-img">
-                            <div class="d-flex flex-column pl-4">
-                                <h1><?php echo($bIngles ? 'Wellness & Spa' : 'Bienestar, Wellness y Spa')?><br></h1>
+                            <div class="d-flex flex-column pl-4" style="width: 280px;">
+                                <h3><?php echo($bIngles ? 'Wellness & Spa' : 'Bienestar, Wellness y Spa')?><br></h3>
                                 <p class="text-white"><?php echo($bIngles ? 'The best attention and services' : 'La mejor atención y servicios')?></p>
                             </div>
                         </div>
@@ -217,7 +215,7 @@
                         <div class="d-flex align-items-center">
                             <img src="img/img_betterlife.svg" class="carousel-logo-img">
                             <div class="d-flex flex-column pl-4">
-                                <h1 style="font-size: 20px;"><?php echo($bIngles ? 'The Medical' : 'Plataforma integral')?><br><?php echo($bIngles ? 'Tourism Platform' : 'de Turismo Médico')?></h1>
+                                <h3 style="font-size: 20px;"><?php echo($bIngles ? 'The Medical' : 'Plataforma integral')?><br><?php echo($bIngles ? 'Tourism Platform' : 'de Turismo Médico')?></h3>
                                 <p class="text-white" style="font-size: 12px;"><?php echo($bIngles ? 'Health & Wellness' : 'Salud y Bienestar')?></p>
                             </div>
                         </div>
@@ -233,7 +231,7 @@
                         <div class="d-flex align-items-center">
                             <img src="img/img_betterlife.svg" class="carousel-logo-img">
                             <div class="d-flex flex-column pl-4">
-                                <h1 style="font-size: 20px;"><?php echo($bIngles ? 'Teleassistance' : 'Teleasistencia')?><br><?php echo($bIngles ? 'and Consultations' : 'y consultas')?></h1>
+                                <h3 style="font-size: 20px;"><?php echo($bIngles ? 'Teleassistance' : 'Teleasistencia')?><br><?php echo($bIngles ? 'and Consultations' : 'y consultas')?></h3>
                                 <p class="text-white" style="font-size: 12px;"><?php echo($bIngles ? 'Attending to patients by video call' : 'Atiende a los pacientes por videollamada')?></p>
                             </div>
                         </div>
@@ -249,7 +247,7 @@
                         <div class="d-flex align-items-center">
                             <img src="img/img_betterlife.svg" class="carousel-logo-img">
                             <di class="d-flex flex-column pl-4">
-                                <h1 style="font-size: 20px;"><?php echo($bIngles ? 'Wellness & Spa' : 'Bienestar, Wellness y Spa')?><br></h1>
+                                <h3 style="font-size: 20px;"><?php echo($bIngles ? 'Wellness & Spa' : 'Bienestar, Wellness y Spa')?><br></h3>
                                 <p class="text-white" style="font-size: 12px;"><?php echo($bIngles ? 'The best attention and services' : 'La mejor atención y servicios')?></p>
                             </di>
                         </div>
@@ -260,7 +258,6 @@
                 </div>
             </div>
         </div>
-    
         <div id="Perfil" class="container text-center">
             <h2 class="AvenirBook" style="margin-top: 20px"><b><?php echo($bIngles ? 'Profile' : 'Perfil')?></b></h2>
             <p><?php echo($bIngles ? 'Proven track record in the health sector, hospitality, technology and marketing' : 'Reconocida trayectoria en el sector salud, hotelería, tecnología y comercialización.')?></p>
@@ -273,28 +270,83 @@
             <div class="container-fluid" style="margin-bottom: 50px">
                 <div class="row">
                     <div class="col-md-4 col-sm-12" style="display: flex; justify-content: center">
-                        <div class="card" id="card01" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; background-image: url(<?php echo($bIngles == 0 ? 'img/Esp1.png' : 'img/Eng1.png')?>); transition: all 1.5s ease-in-out 0s; background-size: contain;">
-                            <div class="card-body" style="background: linear-gradient(#0000, #252527); border-radius: 20px; display: flex; justify-content: center;">
-                                <p style="color: white;position: absolute;bottom: 0;text-align: center;">
-                                    <?php echo($bIngles ? 'High quality medical' : 'Procedimientos médicos')?> <br>
-                                    <?php echo($bIngles ? 'procedures' : 'de alta calidad.')?>
-                                </p>
+                        <div style="width: 368px">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card" id="card01" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; background-image: url(<?php echo($bIngles == 0 ? 'img/Esp1.png' : 'img/Eng1.png')?>); background-size: contain;">
+                                            <div class="card-body" style="background: linear-gradient(#0000, #252527); border-radius: 20px; display: flex; justify-content: center;">
+                                                <p style="color: white;position: absolute;bottom: 0;text-align: center;">
+                                                    <?php echo($bIngles ? 'High quality medical' : 'Procedimientos médicos')?> <br>
+                                                    <?php echo($bIngles ? 'procedures' : 'de alta calidad.')?>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card" id="card01" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; background-image: url(<?php echo($bIngles == 0 ? 'img/Esp2.png' : 'img/Eng2.png')?>); background-size: contain;">
+                                            <div class="card-body" style="background: linear-gradient(#0000, #252527); border-radius: 20px; display: flex; justify-content: center;">
+                                                <p style="color: white;position: absolute;bottom: 0;text-align: center;">
+                                                    <?php echo($bIngles ? 'High quality medical' : 'Procedimientos médicos')?> <br>
+                                                    <?php echo($bIngles ? 'procedures' : 'de alta calidad.')?>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card" id="card01" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; background-image: url(<?php echo($bIngles == 0 ? 'img/Esp3.png' : 'img/Eng3.png')?>); background-size: contain;">
+                                            <div class="card-body" style="background: linear-gradient(#0000, #252527); border-radius: 20px; display: flex; justify-content: center;">
+                                                <p style="color: white;position: absolute;bottom: 0;text-align: center;">
+                                                    <?php echo($bIngles ? 'High quality medical' : 'Procedimientos médicos')?> <br>
+                                                    <?php echo($bIngles ? 'procedures' : 'de alta calidad.')?>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12" style="display: flex; justify-content: center">
-                        <div class="card" id="card02" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; background-image: url('img/Perfil02.png'); transition: all 1.5s ease-in-out 0s">
-                            <div class="card-body" style="background: linear-gradient(#0000, #252527); border-radius: 20px; display: flex; justify-content: center;">
-                                <p style="color: white;position: absolute;bottom: 0;text-align: center;">
-                                    <?php echo($bIngles ? 'Certified Hospitals' : 'Hospitales y Clínicas')?> <br>
-                                    <?php echo($bIngles ? 'and Clinics of' : 'certificadas de')?> <br>
-                                    <?php echo($bIngles ? 'recognized prestige' : 'reconocido prestigio')?>
-                                </p>
+                        <div style="width: 368px">
+                            <div id="carouselExampleSlidesOnly02" class="carousel slide carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card" id="card01" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; background-image: url('img/Perfil02.png'); background-size: contain;">
+                                        <div class="card-body" style="background: linear-gradient(#0000, #252527); border-radius: 20px; display: flex; justify-content: center;">
+                                            <p style="color: white;position: absolute;bottom: 0;text-align: center;">
+                                                <?php echo($bIngles ? 'High quality medical' : 'Procedimientos médicos')?> <br>
+                                                <?php echo($bIngles ? 'procedures' : 'de alta calidad.')?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card" id="card01" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; background-image: url('img/Perfil05.png'); background-size: contain;">
+                                        <div class="card-body" style="background: linear-gradient(#0000, #252527); border-radius: 20px; display: flex; justify-content: center;">
+                                            <p style="color: white;position: absolute;bottom: 0;text-align: center;">
+                                                <?php echo($bIngles ? 'High quality medical' : 'Procedimientos médicos')?> <br>
+                                                <?php echo($bIngles ? 'procedures' : 'de alta calidad.')?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card" id="card01" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; background-image: url('img/Perfil08.png'); background-size: contain;">
+                                        <div class="card-body" style="background: linear-gradient(#0000, #252527); border-radius: 20px; display: flex; justify-content: center;">
+                                            <p style="color: white;position: absolute;bottom: 0;text-align: center;">
+                                                <?php echo($bIngles ? 'High quality medical' : 'Procedimientos médicos')?> <br>
+                                                <?php echo($bIngles ? 'procedures' : 'de alta calidad.')?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12" style="display: flex; justify-content: center">
-                        <div class="card" id="card03" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; background-image: url('img/Perfil03.png'); transition: all 1.5s ease-in-out 0s">
+                        <div class="card" id="card03" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; transition:background-image 1.5s ease-in-out 0s; -moz-transition: background-image 1.5s ease-in-out 0s; -webkit-transition: background-image 1.5s ease-in-out 0s; background-image: url('img/Perfil03.png');">
                             <div class="card-body" style="background: linear-gradient(#0000, #252527); border-radius: 20px; display: flex; justify-content: center;">
                                 <p style="color: white;position: absolute;bottom: 0;text-align: center;">
                                     <?php echo($bIngles ? 'Electronic Clinical Record,' : 'Expediente Clínico')?> <br>
@@ -660,10 +712,9 @@
             </div>
         </div>
         <div style="height: 71px"></div>
-    
     </div>
 
-    <section class="fixed-bottom" style="background: #03528C">
+    <section style="background: #03528C">
         <div class="row d-flex align-items-center" style="background: none; margin: 0px; height: 70px;">
             <div class="col-md-4 Foto cellText" style="text-align: left; align-self: center; margin-top: 5px;">
                 <label class="cellText text-white AvenirLight" style="font-size: 12px">Powered By: </label>
@@ -686,34 +737,6 @@
 
         $(document).on('click', '.isDisabled', function (e) {
             e.preventDefault();
-        });
-        
-        var index = 0;
-
-        var listaimg = [
-            <?php echo($bIngles == 0 ? '"img/Esp1.png"' : '"img/Eng1.png"')?>,
-            <?php echo($bIngles == 0 ? '"img/Esp2.png"' : '"img/Eng2.png"')?>,
-            <?php echo($bIngles == 0 ? '"img/Esp3.png"' : '"img/Eng3.png"')?>
-        ];
-
-        var listaimg2 = [
-            "img/Perfil02.png",
-            "img/Perfil05.png",
-            "img/Perfil08.png",
-        ];
-
-        $(document).ready(function () {
-            $(function() {
-                setInterval(changeImage, 5000);
-            });
-
-            function changeImage() {
-                $('#card01').css("background-image", 'url(' + listaimg[index] + ')');
-                $('#card02').css("background-image", 'url(' + listaimg2[index] + ')');
-                index++;
-                if(index == 3)
-                    index = 0;
-            }
         });
 
         $('#ENG').on('click', function (e) {

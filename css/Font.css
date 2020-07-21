@@ -1,51 +1,51 @@
 @font-face{
     font-family: Avenir-Book;
-    src: url('font/Avenir-Book.woff');
+    src: url('../font/Avenir-Book.woff');
 }
 
 @font-face{
     font-family: Avenir-Medium;
-    src: url('font/Avenir-Medium.woff');
+    src: url('../font/Avenir-Medium.woff');
 }
 
 @font-face{
     font-family: Avenir-Heavy;
-    src: url('font/Avenir-Heavy.woff');
+    src: url('../font/Avenir-Heavy.woff');
 }
 
 @font-face{
     font-family: Avenir-Oblique;
-    src: url('font/Avenir-Oblique.woff');
+    src: url('../font/Avenir-Oblique.woff');
 }
 
 @font-face {
     font-family: Avenir-Regular;
-    src: url('font/Avenir-Medium.woff');
+    src: url('../font/Avenir-Medium.woff');
 }
 
 @font-face {
     font-family: Avenir-Heavy;
-    src: url('font/Avenir-Heavy.woff');
+    src: url('../font/Avenir-Heavy.woff');
 }
 
 @font-face {
     font-family: Avenir-Light;
-    src: url('font/Avenir-Light.woff');
+    src: url('../font/Avenir-Light.woff');
 }
 
 @font-face {
     font-family: Avenir-Black;
-    src: url('font/Avenir-Black.woff');
+    src: url('../font/Avenir-Black.woff');
 }
 
 @font-face {
     font-family: Avenir-Roman;
-    src: url('font/Avenir-Roman.woff');
+    src: url('../font/Avenir-Roman.woff');
 }
 
 @font-face {
     font-family: Book;
-    src: url('font/Avenir-Book.woff');
+    src: url('../font/Avenir-Book.woff');
 }
 
 body
