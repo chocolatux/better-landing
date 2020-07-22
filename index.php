@@ -22,80 +22,80 @@
 </head>
 <body>
     <style>
-            .navbar {
-                border-bottom: 4px solid #40ACFA;
-            }
-        
-            .nav-item.active{
-                text-decoration: none;
-            }
-        
-            .carousel-caption{
-                /*background: url('img/carousel/carousel_map.png');*/
-                background-repeat: no-repeat;
-                background-size: contain;
-                top: 0;
-                bottom: 0;
-                right: 48% !important;
-                left: 0 !important;
-                text-align: left;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding-top: 40px;
-            }
-        
-            .carousel-caption .carousel-logo-img {
-                width: 150px;
-                height: auto;
-                padding: 10px;
-                background: rgba(0,0,0,0);
-            }
-        
-            .btn-carousel {
-                background: white;
-                color: #03528C;
-                border: none;
-                outline: none;
-                border-radius: 50px;
-                display: block;
-                padding: 10px 40px;
-                font-size: 1.1rem;
-                font-weight: bold;
-            }
-        
-            .fondoAzul{
-                color: white;
-                position: absolute;
-                bottom: 0;
-                text-align: center;
-                /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,82,140,1) 35%, rgba(4,150,255,1) 100%);*/
-                background-image: linear-gradient(90deg, #03528C, #0496FF);
-                opacity: 80%;
-                width: 100%;
-                margin: 0;
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                height: 90px;
-                align-items: center;
-                display: flex;
-                text-align: left;
-                padding-left: 10px;
-            }
-        
-            .letrasFondoAzul{
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                color: white;
-                text-align: left;
-                height: 90px;
-                margin: 0;
-                padding-left: 10px;
-                display: flex;
-                align-items: center;
-            }
+        .navbar {
+            border-bottom: 4px solid #40ACFA;
+        }
+
+        .nav-item.active{
+            text-decoration: none;
+        }
+
+        .carousel-caption{
+            /*background: url('img/carousel/carousel_map.png');*/
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 0;
+            bottom: 0;
+            right: 48% !important;
+            left: 0 !important;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 40px;
+        }
+
+        .carousel-caption .carousel-logo-img {
+            width: 150px;
+            height: auto;
+            padding: 10px;
+            background: rgba(0,0,0,0);
+        }
+
+        .btn-carousel {
+            background: white;
+            color: #03528C;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            display: block;
+            padding: 10px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .fondoAzul{
+            color: white;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(3,82,140,1) 35%, rgba(4,150,255,1) 100%);*/
+            background-image: linear-gradient(90deg, #03528C, #0496FF);
+            opacity: 80%;
+            width: 100%;
+            margin: 0;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            height: 90px;
+            align-items: center;
+            display: flex;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .letrasFondoAzul{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: left;
+            height: 90px;
+            margin: 0;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+        }
     </style>
 
     <?php
@@ -128,16 +128,16 @@
                 </div>
             </div>
     
-            <div class="collapse navbar-collapse justify-content-end navbarSupportedContentClase" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav" style="width: 75%">
                     <li class="nav-item active" id="inicio">
                         <a class="nav-link" style="font-family: Avenir-Heavy !important;" href="#Home"><?php echo($bIngles ? 'HOME' : 'INICIO')?><span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item" id="procedimientos">
-                        <a class="nav-link" style="font-family: Avenir-Heavy !important;" href="#Servicios"><?php echo($bIngles ? 'SERVICES' : 'SERVICIOS')?></a>
+                        <a class="nav-link link-servicios" style="font-family: Avenir-Heavy !important;" href="#Servicios"><?php echo($bIngles ? 'SERVICES' : 'SERVICIOS')?></a>
                     </li>
                     <li class="nav-item" id="medicos">
-                        <a class="nav-link" style="font-family: Avenir-Heavy !important;" href="#Socios"><?php echo($bIngles ? 'PARTNERS' : 'SOCIOS')?></a>
+                        <a class="nav-link link-socios" style="font-family: Avenir-Heavy !important;" href="#Socios"><?php echo($bIngles ? 'PARTNERS' : 'SOCIOS')?></a>
                     </li>
                     <li class="nav-item" id="contacto">
                         <a class="nav-link letrasLandingPage" href="#"><?php echo($bIngles ? 'VISIT PLATFORM' : 'VISITAR PLATAFORMA')?></a>
@@ -151,7 +151,6 @@
                         </div>
                     </form>
                 </div>
-    
             </div>
         </nav>
     </header>
@@ -269,7 +268,7 @@
             </div>
             <div class="container-fluid" style="margin-bottom: 50px">
                 <div class="row">
-                    <div class="col-md-4 col-sm-12" style="display: flex; justify-content: center">
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="display: flex; justify-content: center">
                         <div style="width: 368px">
                             <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
                                 <div class="carousel-inner">
@@ -307,7 +306,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12" style="display: flex; justify-content: center">
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="display: flex; justify-content: center">
                         <div style="width: 368px">
                             <div id="carouselExampleSlidesOnly02" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
@@ -345,7 +344,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12" style="display: flex; justify-content: center">
+                    <div class="col-lg-4 col-md-6 col-sm-12" style="display: flex; justify-content: center">
                         <div class="card" id="card03" style="height: 250px; position: relative; width: 23rem; border-radius: 20px; transition:background-image 1.5s ease-in-out 0s; -moz-transition: background-image 1.5s ease-in-out 0s; -webkit-transition: background-image 1.5s ease-in-out 0s; background-image: url('img/Perfil03.png');">
                             <div class="card-body" style="background: linear-gradient(#0000, #252527); border-radius: 20px; display: flex; justify-content: center;">
                                 <p style="color: white;position: absolute;bottom: 0;text-align: center;">
@@ -753,6 +752,28 @@
 
         $('#espMovil').on('click', function (e) {
             window.location.href = '/';
+        });
+
+        $('.link-servicios').on('click',function(e){
+            e.preventDefault();
+
+            var strAncla = $(this).attr('href'); //id del ancla
+
+            $('body,html').stop(true,true).animate({
+                scrollTop: $(strAncla).offset().top -90
+            },100);
+
+        });
+
+        $('.link-socios').on('click',function(e){
+            e.preventDefault();
+
+            var strAncla = $(this).attr('href'); //id del ancla
+
+            $('body,html').stop(true,true).animate({
+                scrollTop: $(strAncla).offset().top +225
+            },100);
+
         });
 
     </script>
