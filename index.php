@@ -714,7 +714,7 @@
     </div>
 
     <section style="background: #03528C">
-        <div class="row d-flex align-items-center" style="background: none; margin: 0px; height: 70px;">
+        <div class="row d-flex align-items-center footer">
             <div class="col-md-4 Foto cellText" style="text-align: left; align-self: center; margin-top: 5px;">
                 <label class="cellText text-white AvenirLight" style="font-size: 12px">Powered By: </label>
                 <img src="img/LogoChoco.png" style="width: 81px;">
