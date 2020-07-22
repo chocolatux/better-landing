@@ -140,7 +140,7 @@
                         <a class="nav-link link-socios" style="font-family: Avenir-Heavy !important;" href="#Socios"><?php echo($bIngles ? 'PARTNERS' : 'SOCIOS')?></a>
                     </li>
                     <li class="nav-item" id="contacto">
-                        <a class="nav-link letrasLandingPage" href="#"><?php echo($bIngles ? 'VISIT PLATFORM' : 'VISITAR PLATAFORMA')?></a>
+                        <a class="nav-link letrasLandingPage" href="http://betterlifedev.chocolatux.com/login"><?php echo($bIngles ? 'VISIT PLATFORM' : 'VISITAR PLATAFORMA')?></a>
                     </li>
                 </ul>
                 <div class="btnIng">
